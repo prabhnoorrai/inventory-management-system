@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { firestore } from "@/firebase";
-import { Box, Typography, Stack, TextField, Button, Modal } from '@mui/material'
+import { Box, Typography, Stack, TextField, Button } from '@mui/material'
 import { collection, deleteDoc, doc, query, setDoc, getDocs, getDoc } from "firebase/firestore";
 
 export default function Home() {
@@ -70,7 +70,7 @@ export default function Home() {
       alignItems="center"
       gap={2}
     >
-      <Modal> open={open} onClose ={handleClose}
+      <Modal open={open} onClose ={handleClose}>
         <Box 
         position="absolute"
         top="50%"
