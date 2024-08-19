@@ -7,7 +7,7 @@ import { collection, deleteDoc, doc, query, setDoc, getDocs, getDoc } from "fire
 
 export default function Home() {
   const [inventory, setInventory] = useState([])
-  const [open, setOpen] = useState
+  const [open, setOpen] = useState()
   const [itemName, setItemName] = useState('')
 
   const updateInventory = async () => {
